@@ -1,0 +1,679 @@
+.builds-main .caja-builds-uno, .builds-main .caja-builds-dos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation-name: animation-container-dos;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  transition: 1s; }
+
+header {
+  animation-name: animation-header;
+  animation-duration: 2s;
+  animation-iteration-count: 1; }
+  header h4 {
+    font-size: 3rem;
+    font-weight: 600; }
+    header h4 a {
+      text-decoration: none;
+      color: #131514; }
+  header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 3rem;
+    background-color: #f9f5f6; }
+    header div nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem; }
+      header div nav ul li {
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #131514;
+        transition: .3s; }
+        header div nav ul li a {
+          text-decoration: none;
+          color: #131514; }
+      header div nav ul li:hover {
+        transform: scale(1.1);
+        transition: .3s; }
+
+@keyframes animation-header {
+  0% {
+    opacity: 0%; }
+  100% {
+    opacity: 100%; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  height: 100vh;
+  background-color: #131514;
+  display: flex;
+  flex-direction: column; }
+
+.subtitulo {
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #f9f5f6;
+  animation-name: animation-h1-h2-h3;
+  animation-iteration-count: 1;
+  animation-duration: 5s;
+  margin: 3rem auto; }
+
+/* estilos de footer */
+footer {
+  background-color: #f9f5f6;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 58px; }
+
+footer h4 {
+  color: #131514;
+  font-size: 1rem; }
+
+.builds-main .caja-builds-uno, .builds-main .caja-builds-dos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation-name: animation-container-dos;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  transition: 1s; }
+
+/* ESTILOS DE INDEX */
+.titulo {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 8rem;
+  color: #f9f5f6;
+  animation-name: animation-h1-h2-h3;
+  animation-iteration-count: 1;
+  animation-duration: 5s; }
+
+@keyframes animation-h1-h2-h3 {
+  0% {
+    opacity: 0%; }
+  15% {
+    opacity: 0%; }
+  100% {
+    opacity: 100%; } }
+
+.subtitulo-1 {
+  margin-bottom: 3rem;
+  font-size: 1.3rem;
+  color: #f9f5f6;
+  text-align: center;
+  animation-name: animation-h2;
+  animation-duration: 2.5s;
+  animation-iteration-count: 1; }
+
+@keyframes animation-h2 {
+  0% {
+    opacity: 0%; }
+  50% {
+    opacity: 0%; }
+  100% {
+    opacity: 100%; } }
+
+.index-main a {
+  text-decoration: none; }
+
+.index-main .caja-index {
+  height: 300px;
+  width: 300px;
+  border-radius: 15px; }
+  .index-main .caja-index h3 {
+    padding: 10px;
+    color: #f9f5f6;
+    text-shadow: 3px 2px 3px black; }
+
+.index-main .div-uno {
+  grid-area: div-uno;
+  animation-name: animation-caja-uno;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  transition: .5s;
+  background-image: url(../img/index-1.png); }
+
+.index-main .div-uno:hover {
+  transform: scale(1.05);
+  transition: .5s; }
+
+@keyframes animation-caja-uno {
+  0% {
+    opacity: 0%; }
+  40% {
+    opacity: 0%; }
+  100% {
+    opacity: 100%; } }
+
+.index-main .div-dos {
+  grid-area: div-dos;
+  animation-name: animation-caja-dos;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  transition: .5s;
+  background-image: url(../img/index-2.png); }
+
+.index-main .div-dos:hover {
+  transform: scale(1.05);
+  transition: .5s; }
+
+@keyframes animation-caja-dos {
+  0% {
+    opacity: 0%; }
+  50% {
+    opacity: 0%; }
+  100% {
+    opacity: 100%; } }
+
+.index-main .div-tres {
+  grid-area: div-tres;
+  animation-name: animation-caja-tres;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  transition: .5s;
+  background-image: url(../img/index-3.png); }
+
+.index-main .div-tres:hover {
+  transform: scale(1.05);
+  transition: .5s; }
+
+@keyframes animation-caja-tres {
+  0% {
+    opacity: 0%; }
+  60% {
+    opacity: 0%; }
+  100% {
+    opacity: 100%; } }
+
+.index-main .div-cuatro {
+  grid-area: div-cuatro;
+  animation-name: animation-caja-cuatro;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  transition: .5s;
+  background-image: url(../img/index-4.png); }
+
+.index-main .div-cuatro:hover {
+  transform: scale(1.05);
+  transition: .5s; }
+
+@keyframes animation-caja-cuatro {
+  0% {
+    opacity: 0%; }
+  70% {
+    opacity: 0%; }
+  100% {
+    opacity: 100%; } }
+
+.grid-index {
+  display: grid;
+  grid-template-areas: "div-uno div-dos" "div-tres div-cuatro";
+  justify-content: center;
+  gap: 15px; }
+
+/* ESTILOS CELULAR */
+@media screen and (max-width: 1024px) {
+  .grid-index {
+    display: grid;
+    grid-template-areas: "div-uno" "div-dos" "div-tres" "div-cuatro"; }
+  .index-main {
+    margin-bottom: 30px; } }
+
+.builds-main .caja-builds-uno, .builds-main .caja-builds-dos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation-name: animation-container-dos;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  transition: 1s; }
+
+/* MAIN */
+.guides-main {
+  margin-bottom: 500px; }
+  .guides-main .caja-guides {
+    height: 250px;
+    width: 1000px;
+    border-radius: 15px; }
+  .guides-main .container-uno {
+    grid-area: container-1;
+    animation-name: animation-container-uno;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    transition: .5s;
+    background-image: url(../img/GUIDES-1.png); }
+  .guides-main .container-uno:hover {
+    transition: .5s;
+    transform: scale(1.02); }
+
+@keyframes animation-container-uno {
+  0% {
+    opacity: 0%; }
+  25% {
+    opacity: 0%; }
+  100% {
+    opacity: 100%; } }
+  .guides-main .container-dos {
+    grid-area: container-2;
+    animation-name: animation-container-dos;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    transition: .5s;
+    background-image: url(../img/GUIDES-2.png); }
+  .guides-main .container-dos:hover {
+    transition: .5s;
+    transform: scale(1.02); }
+
+@keyframes animation-container-dos {
+  0% {
+    opacity: 0%; }
+  35% {
+    opacity: 0%; }
+  100% {
+    opacity: 100%; } }
+
+.grid-guides {
+  display: grid;
+  grid-template-areas: "container-1" "container-2";
+  justify-content: center;
+  gap: 30px; }
+
+/* SECTIONS */
+.guia-uno, .guia-dos {
+  display: flex;
+  flex-direction: column;
+  height: 900px;
+  width: 800px;
+  background-color: #f9f9f6;
+  margin: 50px auto;
+  border-radius: 8px;
+  padding: 10px; }
+  .guia-uno .imagen-titulo, .guia-dos .imagen-titulo {
+    display: flex;
+    align-items: center;
+    gap: 10px; }
+    .guia-uno .imagen-titulo h3, .guia-dos .imagen-titulo h3 {
+      text-transform: uppercase; }
+  .guia-uno .guides-padding, .guia-dos .guides-padding {
+    padding: 8px; }
+    .guia-uno .guides-padding .guides-imagen, .guia-dos .guides-padding .guides-imagen {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px; }
+      .guia-uno .guides-padding .guides-imagen h4, .guia-dos .guides-padding .guides-imagen h4 {
+        color: #aa4458; }
+      .guia-uno .guides-padding .guides-imagen h5, .guia-dos .guides-padding .guides-imagen h5 {
+        font-size: 0.9rem;
+        font-weight: 600; }
+    .guia-uno .guides-padding .patron, .guia-dos .guides-padding .patron {
+      display: flex;
+      justify-content: center;
+      padding-top: 1rem; }
+
+/* ESTILOS CELULAR */
+@media screen and (max-width: 1024px) {
+  .guides-main .container-uno {
+    background-position-x: -350px; }
+  .guides-main .container-dos {
+    background-position-x: -350px; }
+  .guides-main .caja-guides {
+    width: 300px; }
+  .guia-uno, .guia-dos {
+    height: 850px;
+    width: 30rem; }
+    .guia-uno .guides-imagen, .guia-dos .guides-imagen {
+      gap: 20px; }
+  p {
+    font-size: .7rem; }
+  h4 {
+    font-size: .8rem; }
+  h5 {
+    font-size: .8rem;
+    text-align: center; } }
+
+.builds-main .caja-builds-uno, .builds-main .caja-builds-dos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation-name: animation-container-dos;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  transition: 1s; }
+
+/* ESTILOS DE BOSSES */
+/* MAIN */
+.grid-bosses {
+  display: grid;
+  grid-template-areas: "boss-1" "boss-2" "boss-3";
+  gap: 30px;
+  justify-content: center; }
+
+.bosses-main .caja-bosses {
+  height: 200px;
+  width: 800px;
+  border-radius: 15px; }
+  .bosses-main .caja-bosses h3 {
+    padding: 10px;
+    color: #f9f5f6;
+    text-shadow: 3px 2px 3px black; }
+
+.bosses-main .boss-uno {
+  animation-name: animation-boss-uno;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  transition: .5s;
+  background-image: url(../img/garmoth.png); }
+
+.bosses-main .boss-uno:hover {
+  transition: 1s;
+  transform: scale(1.02); }
+
+.bosses-main .boss-dos {
+  animation-name: animation-boss-dos;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  transition: .5s;
+  background-image: url(../img/vell.png); }
+
+.bosses-main .boss-dos:hover {
+  transition: 1s;
+  transform: scale(1.02); }
+
+.bosses-main .boss-tres {
+  animation-name: animation-boss-tres;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  transition: .5s;
+  background-image: url(../img/nouver.png); }
+
+.bosses-main .boss-tres:hover {
+  transition: 1s;
+  transform: scale(1.02); }
+
+@keyframes animation-boss-uno {
+  0% {
+    opacity: 0%; }
+  40% {
+    opacity: 0%; }
+  100% {
+    opacity: 100%; } }
+
+@keyframes animation-boss-dos {
+  0% {
+    opacity: 0%; }
+  50% {
+    opacity: 0%; }
+  100% {
+    opacity: 100%; } }
+
+@keyframes animation-boss-tres {
+  0% {
+    opacity: 0%; }
+  60% {
+    opacity: 0%; }
+  100% {
+    opacity: 100%; } }
+
+/* ESTILOS CELULAR */
+@media screen and (max-width: 1024px) {
+  .caja-bosses {
+    width: 300px; }
+  .boss-uno {
+    background-position-x: -290px; }
+  .boss-dos {
+    background-position-x: -350px; }
+  .boss-tres {
+    background-position-x: -290px; } }
+
+.builds-main .caja-builds-uno, .builds-main .caja-builds-dos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation-name: animation-container-dos;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  transition: 1s; }
+
+/* ESTILOS DE CLASSES */
+/* MAIN */
+.classes-main .cajon {
+  height: 300px;
+  width: 300px;
+  border-radius: 15px; }
+  .classes-main .cajon h3 {
+    padding: 10px;
+    color: #f9f5f6;
+    text-shadow: 3px 3px 3px black; }
+
+.classes-main .clase-1 {
+  animation-name: animation-caja-uno;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  transition: .5s;
+  background-image: url(../img/warrior.png); }
+
+.classes-main .clase-1:hover {
+  transition: .5s;
+  transform: scale(1.02); }
+
+.classes-main .clase-2 {
+  animation-name: animation-caja-dos;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  transition: .5s;
+  background-image: url(../img/ranger.png); }
+
+.classes-main .clase-2:hover {
+  transition: .5s;
+  transform: scale(1.02); }
+
+.classes-main .clase-3 {
+  animation-name: animation-caja-tres;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  transition: .5s;
+  background-image: url(../img/witch.png); }
+
+.classes-main .clase-3:hover {
+  transition: .5s;
+  transform: scale(1.02); }
+
+.classes-main .clase-4 {
+  animation-name: animation-caja-cuatro;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  transition: .5s;
+  background-image: url(../img/woosa.png); }
+
+.classes-main .clase-4:hover {
+  transition: .5s;
+  transform: scale(1.02); }
+
+.grid-classes {
+  display: grid;
+  grid-template-areas: "clase-1 clase-2" "clase-3 clase-4";
+  gap: 30px;
+  justify-content: center; }
+
+/* ESTILOS CELULAR */
+@media screen and (max-width: 1024px) {
+  .grid-classes {
+    display: grid;
+    grid-template-areas: "clase-1" "clase-2" "clase-3" "clase-4"; }
+  .classes-main {
+    margin-bottom: 30px; } }
+
+.builds-main .caja-builds-uno, .builds-main .caja-builds-dos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation-name: animation-container-dos;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  transition: 1s; }
+
+/* ESTILOS DE BUILDS */
+.builds-main {
+  display: grid;
+  grid-template-areas: "pve pvp";
+  justify-content: center;
+  gap: 3rem;
+  padding-top: 100px;
+  margin-bottom: 500px; }
+  .builds-main h3 {
+    color: #f9f5f6;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    letter-spacing: 1px; }
+  .builds-main .caja-builds-uno {
+    grid-area: pve; }
+  .builds-main .caja-builds-dos {
+    grid-area: pvp; }
+  .builds-main .caja-builds {
+    background-color: #f9f5f6;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    transition: 1s; }
+  .builds-main .caja-builds:hover {
+    transition: 1s;
+    transform: scale(1.02); }
+  .builds-main a {
+    text-decoration: none; }
+  .builds-main .caja-pve {
+    background-image: url(../../img/Buildspve.jpg); }
+  .builds-main .caja-pvp {
+    background-image: url(../../img/Buildspvp.jpg); }
+
+.section-builds-uno {
+  display: grid;
+  place-items: center;
+  margin-bottom: 400px;
+  width: 100%; }
+  .section-builds-uno .build-uno {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 3rem;
+    gap: 6rem;
+    width: 100%; }
+    .section-builds-uno .build-uno .build-uno-build {
+      display: flex;
+      align-items: center;
+      gap: 2rem; }
+      .section-builds-uno .build-uno .build-uno-build h3 {
+        font-size: 2.5rem;
+        color: #f9f5f6; }
+        .section-builds-uno .build-uno .build-uno-build h3 span {
+          display: block;
+          text-align: center; }
+    .section-builds-uno .build-uno .build-uno-addons, .section-builds-uno .build-uno .build-dos-addons {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      justify-content: center;
+      align-items: center; }
+      .section-builds-uno .build-uno .build-uno-addons .build-uno-buffs, .section-builds-uno .build-uno .build-uno-addons .build-uno-crystal, .section-builds-uno .build-uno .build-dos-addons .build-uno-buffs, .section-builds-uno .build-uno .build-dos-addons .build-uno-crystal {
+        display: flex;
+        align-items: center;
+        flex-direction: column; }
+        .section-builds-uno .build-uno .build-uno-addons .build-uno-buffs h4, .section-builds-uno .build-uno .build-uno-addons .build-uno-crystal h4, .section-builds-uno .build-uno .build-dos-addons .build-uno-buffs h4, .section-builds-uno .build-uno .build-dos-addons .build-uno-crystal h4 {
+          color: #f9f5f6;
+          font-size: 2rem;
+          padding: 0.7rem; }
+  .section-builds-uno img {
+    border-style: solid;
+    border-radius: 10px;
+    border-color: gray;
+    border-width: 3px;
+    transition: 0.5s; }
+  .section-builds-uno img:hover {
+    transition: 0.5s;
+    border-color: #f9f5f6;
+    transform: scale(1.02); }
+
+.section-builds-dos {
+  display: grid;
+  place-items: center;
+  margin-bottom: 400px;
+  width: 100%; }
+  .section-builds-dos .build-dos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 3rem;
+    gap: 6rem;
+    width: 100%; }
+    .section-builds-dos .build-dos .build-dos-build {
+      display: flex;
+      align-items: center;
+      gap: 2rem; }
+      .section-builds-dos .build-dos .build-dos-build h3 {
+        font-size: 2.5rem;
+        color: #f9f5f6; }
+        .section-builds-dos .build-dos .build-dos-build h3 span {
+          display: block;
+          text-align: center; }
+    .section-builds-dos .build-dos .build-uno-addons, .section-builds-dos .build-dos .build-dos-addons {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      justify-content: center;
+      align-items: center; }
+      .section-builds-dos .build-dos .build-uno-addons .build-dos-buffs, .section-builds-dos .build-dos .build-uno-addons .build-dos-crystal, .section-builds-dos .build-dos .build-dos-addons .build-dos-buffs, .section-builds-dos .build-dos .build-dos-addons .build-dos-crystal {
+        display: flex;
+        align-items: center;
+        flex-direction: column; }
+        .section-builds-dos .build-dos .build-uno-addons .build-dos-buffs h4, .section-builds-dos .build-dos .build-uno-addons .build-dos-crystal h4, .section-builds-dos .build-dos .build-dos-addons .build-dos-buffs h4, .section-builds-dos .build-dos .build-dos-addons .build-dos-crystal h4 {
+          color: #f9f5f6;
+          font-size: 2rem;
+          padding: 0.7rem; }
+  .section-builds-dos img {
+    border-style: solid;
+    border-radius: 10px;
+    border-color: gray;
+    border-width: 3px;
+    transition: 0.5s; }
+  .section-builds-dos img:hover {
+    transition: 0.5s;
+    border-color: #f9f5f6;
+    transform: scale(1.02); }
+
+/* ESTILOS CELULAR */
+@media screen and (max-width: 1024px) {
+  .builds-main {
+    display: grid;
+    grid-template-areas: "pve" "pvp"; }
+  .build-uno, .build-dos {
+    display: flex;
+    flex-direction: column; }
+  .build-uno-build, .build-dos-build {
+    display: flex;
+    flex-direction: column; }
+  .section-builds-uno img, .section-builds-dos img {
+    border-style: solid;
+    border-radius: 10px;
+    border-color: gray;
+    border-width: 3px;
+    transition: 0.5s;
+    width: 100%; } }

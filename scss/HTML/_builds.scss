@@ -1,0 +1,236 @@
+@import "../base/extend";
+@import "../base/variables";
+@import "../base/mixin";
+
+/* ESTILOS DE BUILDS */
+
+.builds-main{
+    display: grid;
+    grid-template-areas: "pve pvp";
+    justify-content: center; 
+    gap: 3rem;
+    padding-top: 100px;
+    margin-bottom: 500px;
+    
+    h3{
+        color: $color-secundario;
+        margin-bottom: 30px;
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+    }
+    
+    .caja-builds-uno{
+        @extend %caja-builds;
+        grid-area: pve;
+        
+    }
+
+    .caja-builds-dos{
+        @extend %caja-builds;
+        grid-area: pvp;
+    }
+    
+    .caja-builds{
+        background-color: $color-secundario;
+        @include size(300px,300px);
+        border-radius: 10px;
+        transition: 1s;
+    }
+
+    .caja-builds:hover{
+        transition: 1s;
+        transform: scale(1.02);
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .caja-pve{
+        background-image: url(../../img/Buildspve.jpg)
+    }
+
+    .caja-pvp{
+        background-image: url(../../img/Buildspvp.jpg)
+    }
+}
+
+.section-builds-uno{
+    display: grid;
+    place-items: center;
+    margin-bottom: 400px;
+    width: 100%;
+    
+
+    .build-uno{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid gray;
+        border-radius: 10px;
+        padding: 3rem;
+        gap: 6rem;
+        width: 100%;
+        
+
+        .build-uno-build{
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+
+            h3{
+                font-size: 2.5rem;
+                color: $color-secundario;
+
+                span{
+                    display: block;
+                    text-align: center;
+                }
+            }
+        }
+
+        .build-uno-addons, .build-dos-addons{
+            @include flex;
+            gap: 3rem;
+            justify-content: center;
+            align-items: center;
+
+            .build-uno-buffs, .build-uno-crystal{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                
+                h4{
+                    color: $color-secundario;
+                    font-size: 2rem;
+                    padding: 0.7rem;
+                }
+            }
+        }
+
+
+    }
+
+    img{
+        border-style: solid;
+        border-radius: 10px;
+        border-color: gray;
+        border-width: 3px;
+        transition: 0.5s;
+        
+        
+    }
+
+    img:hover{
+        transition: 0.5s;
+        border-color: $color-secundario;
+        transform: scale(1.02);
+    }
+}
+
+.section-builds-dos{
+    display: grid;
+    place-items: center;
+    margin-bottom: 400px;
+    width: 100%;
+    
+
+    .build-dos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid gray;
+        border-radius: 10px;
+        padding: 3rem;
+        gap: 6rem;
+        width: 100%;
+
+        .build-dos-build{
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+
+            h3{
+                font-size: 2.5rem;
+                color: $color-secundario;
+
+                span{
+                    display: block;
+                    text-align: center;
+                }
+            }
+        }
+
+        .build-uno-addons, .build-dos-addons{
+            @include flex;
+            gap: 3rem;
+            justify-content: center;
+            align-items: center;
+
+            .build-dos-buffs, .build-dos-crystal{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                
+                h4{
+                    color: $color-secundario;
+                    font-size: 2rem;
+                    padding: 0.7rem;
+                }
+            }
+        }
+
+
+    }
+
+    img{
+        border-style: solid;
+        border-radius: 10px;
+        border-color: gray;
+        border-width: 3px;
+        transition: 0.5s;
+        
+        
+        
+    }
+
+    img:hover{
+        transition: 0.5s;
+        border-color: $color-secundario;
+        transform: scale(1.02);
+    }
+}
+
+/* ESTILOS CELULAR */
+
+@media screen and (max-width:1024px) {
+
+    .builds-main{
+        display: grid;
+        grid-template-areas: "pve"
+                             "pvp";
+
+    }
+
+
+    .build-uno, .build-dos{
+        @include flex;
+    }
+
+    .build-uno-build, .build-dos-build{
+        @include flex;
+    }
+
+    .section-builds-uno, .section-builds-dos{
+        img{
+            border-style: solid;
+            border-radius: 10px;
+            border-color: gray;
+            border-width: 3px;
+            transition: 0.5s;
+            width: 100%;
+        }
+    }
+
+    
+}

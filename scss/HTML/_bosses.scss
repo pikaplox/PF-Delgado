@@ -1,0 +1,119 @@
+@import "../base/extend";
+@import "../base/variables";
+@import "../base/mixin";
+
+/* ESTILOS DE BOSSES */
+/* MAIN */
+
+.grid-bosses{
+    display: grid;
+    grid-template-areas: "boss-1"
+                         "boss-2"
+                         "boss-3";
+    gap: 30px;
+    justify-content: center;
+}
+
+.bosses-main{
+
+    .caja-bosses{
+        @include size(200px,800px);
+        border-radius: 15px;
+    
+        h3{
+            padding: 10px;
+            color: $color-secundario;
+            text-shadow: 3px 2px 3px black;
+        }
+    }
+
+    .boss-uno{
+        animation-name: animation-boss-uno;
+        @include animation;
+        background-image: url(../img/garmoth.png);
+    }
+
+    .boss-uno:hover{
+        transition: 1s;
+        transform: scale(1.02);
+    }
+
+    .boss-dos{
+        animation-name: animation-boss-dos;
+        @include animation;
+        background-image: url(../img/vell.png);
+    }
+
+    .boss-dos:hover{
+        transition: 1s;
+        transform: scale(1.02);
+    }
+
+    .boss-tres{
+        animation-name: animation-boss-tres;
+        @include animation;
+        background-image: url(../img/nouver.png);
+    }
+
+    .boss-tres:hover{
+        transition: 1s;
+        transform: scale(1.02);
+    }
+
+    @keyframes animation-boss-uno{
+        0%{
+            opacity: 0%;
+        }
+        40%{
+            opacity: 0%;
+        }
+        100%{
+            opacity: 100%;
+        }
+    }
+
+    @keyframes animation-boss-dos{
+        0%{
+            opacity: 0%;
+        }
+        50%{
+            opacity: 0%;
+        }
+        100%{
+            opacity: 100%;
+        }
+    }
+
+    @keyframes animation-boss-tres{
+        0%{
+            opacity: 0%;
+        }
+        60%{
+            opacity: 0%;
+        }
+        100%{
+            opacity: 100%;
+        }
+    }
+}
+
+/* ESTILOS CELULAR */
+
+@media screen and (max-width:1024px) {
+
+    .caja-bosses{
+        width: 300px;
+    }
+
+    .boss-uno{
+        background-position-x: -290px;
+    }
+
+    .boss-dos{
+        background-position-x: -350px;
+    }
+
+    .boss-tres{
+        background-position-x: -290px;
+    }
+}

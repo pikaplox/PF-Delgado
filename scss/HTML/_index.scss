@@ -1,0 +1,199 @@
+@import "../base/extend";
+@import "../base/variables";
+@import "../base/mixin";
+
+
+/* ESTILOS DE INDEX */
+// MAIN 
+
+.titulo{
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 8rem;
+    color: $color-secundario;
+    animation-name: animation-h1-h2-h3;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+}
+
+@keyframes animation-h1-h2-h3{
+    0%{
+        opacity: 0%;
+    }
+    15%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+.subtitulo-1{
+    margin-bottom: 3rem;
+    font-size: 1.3rem;
+    color: $color-secundario;
+    text-align: center;
+    animation-name: animation-h2;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes animation-h2{
+    0%{
+        opacity: 0%;
+    }
+    50%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+.index-main{
+    a{
+        text-decoration: none;
+    }
+    
+    .caja-index{
+        @include size(300px,300px);
+        border-radius: 15px;
+        h3{
+            padding: 10px;
+            color: $color-secundario;
+            text-shadow: 3px 2px 3px black;
+        }
+    }
+    
+    .div-uno{
+        grid-area: div-uno;
+        animation-name: animation-caja-uno;
+        @include animation;
+        background-image: url(../img/index-1.png);
+        
+    } 
+    
+    .div-uno:hover{
+        transform: scale(1.05);
+        transition: .5s;
+    }
+ 
+    @keyframes animation-caja-uno{
+        0%{
+            opacity: 0%;
+        }
+        40%{
+            opacity: 0%;
+        }
+        100%{
+            opacity: 100%;
+        }
+    }
+    
+    .div-dos{
+        grid-area: div-dos;
+        animation-name: animation-caja-dos;
+        @include animation;
+        background-image: url(../img/index-2.png);
+        
+    }
+
+    .div-dos:hover{
+        transform: scale(1.05);
+        transition: .5s;
+    }
+
+    @keyframes animation-caja-dos{
+        0%{
+            opacity: 0%;
+        }
+        50%{
+            opacity: 0%;
+        }
+        100%{
+            opacity: 100%;
+        }
+    }
+
+    .div-tres{
+        grid-area: div-tres;
+        animation-name: animation-caja-tres;
+        @include animation;
+        background-image: url(../img/index-3.png);
+        
+    }
+
+    .div-tres:hover{
+        transform: scale(1.05);
+        transition: .5s;
+    }
+
+    @keyframes animation-caja-tres{
+        0%{
+            opacity: 0%;
+        }
+        60%{
+            opacity: 0%;
+        }
+        100%{
+            opacity: 100%;
+        }
+    }
+
+
+    .div-cuatro{
+        grid-area: div-cuatro;
+        animation-name: animation-caja-cuatro;
+        @include animation;
+        background-image: url(../img/index-4.png);
+        
+        
+    }
+
+    .div-cuatro:hover{
+        transform: scale(1.05);
+        transition: .5s;
+    }
+
+    @keyframes animation-caja-cuatro{
+        0%{
+            opacity: 0%;
+        }
+        70%{
+            opacity: 0%;
+        }
+        100%{
+            opacity: 100%;
+        }
+    }
+
+}
+
+.grid-index{
+    display: grid;
+    grid-template-areas: "div-uno div-dos"
+                         "div-tres div-cuatro";
+    justify-content: center;
+    gap: 15px;
+}
+
+/* ESTILOS CELULAR */
+
+@media screen and (max-width:1024px) {
+
+
+
+    .grid-index{
+        display: grid;
+        grid-template-areas: "div-uno"
+                             "div-dos"
+                             "div-tres"
+                             "div-cuatro";
+    }
+
+    .index-main{
+        margin-bottom: 30px;
+    }
+
+
+}

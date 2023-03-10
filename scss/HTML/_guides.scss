@@ -1,0 +1,166 @@
+@import "../base/extend";
+@import "../base/variables";
+@import "../base/mixin";
+
+// ESTILOS DE GUIDES
+
+/* MAIN */
+
+.guides-main{
+    margin-bottom: 500px;
+    
+    .caja-guides{
+        @include size(250px,1000px);
+        border-radius: 15px;
+    }
+
+    .container-uno{
+        grid-area: container-1;
+        animation-name: animation-container-uno;
+        @include animation;
+        background-image: url(../img/GUIDES-1.png);
+        
+    }
+    
+    .container-uno:hover{
+        transition: .5s;
+        transform: scale(1.02);
+    }
+    
+    @keyframes animation-container-uno{
+        0%{
+            opacity: 0%;
+        }
+        25%{
+            opacity: 0%;
+        }
+        100%{
+            opacity: 100%;
+        }
+    }
+    
+    .container-dos{
+        grid-area: container-2;
+        animation-name: animation-container-dos;
+        @include animation;
+        background-image: url(../img/GUIDES-2.png);  
+        
+    }
+    
+    .container-dos:hover{
+        transition: .5s;
+        transform: scale(1.02);
+    }
+    
+    @keyframes animation-container-dos{
+        0%{
+            opacity: 0%;
+        }
+        35%{
+            opacity: 0%;
+        }
+        100%{
+            opacity: 100%;
+        }
+    }
+
+    
+}
+
+.grid-guides{
+    display: grid;
+    grid-template-areas: "container-1"
+                         "container-2"
+                         ;
+    justify-content: center;
+    gap: 30px;    
+}
+
+/* SECTIONS */
+
+.guia-uno, .guia-dos{
+    @include flex;
+    @include size(900px,800px);
+    background-color: #f9f9f6;
+    margin: 50px auto;
+    border-radius: 8px;
+    padding: 10px;
+
+    .imagen-titulo{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        h3{
+            text-transform: uppercase;
+        }
+    }
+
+    .guides-padding{
+        padding: 8px;
+
+        .guides-imagen {
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+
+            h4{
+                color: rgb(170, 68, 88);
+            }
+
+            h5{
+                font-size: 0.9rem;
+                font-weight: 600;
+            }
+        }
+        
+        .patron{
+            display: flex;
+            justify-content: center;
+            padding-top: 1rem;
+            
+        }
+    }
+}
+
+/* ESTILOS CELULAR */
+
+@media screen and (max-width:1024px) {
+    
+    .guides-main{
+
+        .container-uno{
+            background-position-x: -350px;
+        }
+    
+        .container-dos{
+            background-position-x: -350px;
+        }
+
+        .caja-guides{
+            width: 300px;
+        }
+    }
+
+    .guia-uno, .guia-dos{
+        @include size(850px,30rem);
+        
+        .guides-imagen{
+            gap: 20px;
+        }
+    }
+
+    p{
+        font-size: .7rem;
+    }
+
+    h4{
+        font-size: .8rem;
+    }
+
+    h5{
+        font-size: .8rem;
+        text-align: center;
+    }
+}

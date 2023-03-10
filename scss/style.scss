@@ -1,0 +1,126 @@
+@import "../scss/base/extend";
+@import "../scss/base/variables";
+@import "../scss/base/mixin";
+
+// ESTILOS DE HEADER
+
+header{
+    animation-name: animation-header;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+
+    h4{
+        font-size: 3rem;
+        font-weight: 600;
+        a{
+            text-decoration: none;
+            color: $color-principal;
+        }
+    }
+
+    div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.3rem 3rem;
+        background-color: $color-secundario;
+        nav{
+            ul{
+                list-style: none;
+                display: flex;
+                gap: 2rem;
+                li{
+                    font-size: 1.1rem;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    color: $color-principal;
+                    transition: .3s;
+                    a{
+                        text-decoration: none;
+                        color: $color-principal;
+                    }
+                }
+                li:hover{
+                    transform: scale(1.1);
+                    transition: .3s;
+                }
+            }
+        }
+    }
+    
+    @keyframes animation-header{
+        0%{
+            opacity: 0%;
+        }
+        100%{
+            opacity: 100%;
+        }
+    }
+    
+}
+
+// ESTILOS GENERALES
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Roboto', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    
+}
+
+body{
+    height: 100vh;
+    background-color: $color-principal;
+    @include flex;
+}
+
+.subtitulo{
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #f9f5f6;
+    animation-name: animation-h1-h2-h3;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+    margin: 3rem auto;       
+}
+
+/* estilos de footer */
+
+footer{
+    background-color: $color-secundario;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 58px;
+}
+
+footer h4{
+    color: $color-principal;
+    font-size: 1rem;
+    
+    
+}
+
+
+
+// ESTILOS DE INDEX
+@import "../scss/HTML/index";
+
+// ESTILOS DE GUIDES
+@import "../scss/HTML/guides";
+
+// ESTILOS DE BOSSES
+@import "../scss/HTML/bosses";
+
+// ESTILOS DE CLASSES
+@import "../scss/HTML/classes.scss";
+
+// ESTILOS DE BUILDS
+@import "../scss/HTML/builds";

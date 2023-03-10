@@ -1,0 +1,1 @@
+La pagina esta 95% completa, las imagenes de Builds quedan por hacerlas, no las hice por tiempo, por eso estoy entregando hoy Domingo.

@@ -1,0 +1,96 @@
+@import "../base/extend";
+@import "../base/variables";
+@import "../base/mixin";
+
+/* ESTILOS DE CLASSES */
+/* MAIN */
+
+.classes-main{
+
+    .cajon{
+        @include size(300px,300px);
+        border-radius: 15px;
+
+        h3{
+            padding: 10px;
+            color: $color-secundario;
+            text-shadow: 3px 3px 3px black;
+        }
+    }
+
+    .clase-1{
+        animation-name: animation-caja-uno;
+        @include animation;
+        background-image: url(../img/warrior.png);
+        
+    }
+    
+    .clase-1:hover{
+        transition: .5s;
+        transform: scale(1.02);
+    }
+
+    .clase-2{
+        animation-name: animation-caja-dos;
+        @include animation;
+        background-image: url(../img/ranger.png);
+        
+    }
+    
+    .clase-2:hover{
+        transition: .5s;
+        transform: scale(1.02);
+    }
+
+    .clase-3{
+        animation-name: animation-caja-tres;
+        @include animation;
+        background-image: url(../img/witch.png);
+        
+    }
+    
+    .clase-3:hover{
+        transition: .5s;
+        transform: scale(1.02);
+    }
+
+    .clase-4{
+        animation-name: animation-caja-cuatro;
+        @include animation;
+        background-image: url(../img/woosa.png);
+        
+    }
+    
+    .clase-4:hover{
+        transition: .5s;
+        transform: scale(1.02);
+    }
+}
+
+.grid-classes{
+    display: grid;
+    grid-template-areas: "clase-1 clase-2"
+                         "clase-3 clase-4";
+    gap: 30px;
+    justify-content: center;
+}
+
+
+/* ESTILOS CELULAR */
+
+@media screen and (max-width:1024px) {
+    
+    .grid-classes{
+        display: grid;
+        grid-template-areas: "clase-1"
+                             "clase-2"
+                             "clase-3"
+                             "clase-4";
+    }
+
+    .classes-main{
+        margin-bottom: 30px;
+    }
+}
+
+

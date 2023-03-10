@@ -1,0 +1,12 @@
+// extend
+
+%caja-builds{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation-name: animation-container-dos;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    transition: 1s;
+}
+

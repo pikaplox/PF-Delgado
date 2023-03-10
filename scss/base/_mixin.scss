@@ -1,0 +1,18 @@
+// mixin
+
+@mixin flex{
+    display: flex;
+    flex-direction: column;
+
+}
+
+@mixin animation{
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    transition: .5s;
+}
+
+@mixin size($height, $width){
+    height: $height;
+    width: $width;
+}
